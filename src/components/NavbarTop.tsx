@@ -1,6 +1,6 @@
 "use client"
 
-import "../../styles/Navbar.scss"
+import "../../styles/NavbarTop.scss"
 import {
   MdLocationOn,
   MdOutlineLanguage,
@@ -16,7 +16,7 @@ import {ImGooglePlus} from "react-icons/im"
 import {FaYoutube} from "react-icons/fa"
 import { useState } from "react"
 
-const Navbar = () => {
+const NavbarTop = () => {
     const [dropDown,setDropDown] = useState(false)
 
     const handleDropdown = (e) => {
@@ -84,4 +84,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarTop;
