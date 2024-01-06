@@ -1,11 +1,11 @@
-"use client"
-import { useState } from "react"
-import "../../styles/NavbarBottom.scss"
+"use client";
+import { useState } from "react";
+import "../../styles/NavbarBottom.scss";
 import {
   FaLongArrowAltLeft,
   FaLongArrowAltRight,
   FaSearch,
-} from "react-icons/fa"
+} from "react-icons/fa";
 import {
   MdFavoriteBorder,
   MdFlashOn,
@@ -13,18 +13,24 @@ import {
   MdNavigateNext,
   MdStarBorder,
   MdVisibility,
-} from "react-icons/md"
-import { HiViewGrid } from "react-icons/hi"
+} from "react-icons/md";
+import { HiViewGrid } from "react-icons/hi";
 
 const NavbarBottom = () => {
   const [dropDownOne, setDropDownOne] = useState(false)
   const [dropDownTwo, setDropDownTwo] = useState(false)
+  const [dropDownThree, setDropDownThree] = useState(false)
 
   const handleDropdownOne = (e) => {
-    setDropDownOne(!dropDownOne)
+    setDropDownOne(!dropDownOne);
+    setDropDownTwo(false);
   }
   const handleDropdownTwo = (e) => {
-    setDropDownTwo(!dropDownTwo)
+    setDropDownTwo(!dropDownTwo);
+    setDropDownOne(false);
+  };
+  const handleDropdownThree = (e) => {
+    setDropDownThree(!dropDownThree);
   }
 
   return (
@@ -165,7 +171,7 @@ const NavbarBottom = () => {
                   </div>
                   <div className="rightBottom">
                     <a className="prev" title="Previous">
-                      <FaLongArrowAltLeft style={{ fontSize: "20px" }} />
+                      <FaLongArrowAltLeft style={{ fontSize: "18px" }} />
                     </a>
                     <a className="all" title="View All">
                       <HiViewGrid style={{ fontSize: "18px" }} />
@@ -204,9 +210,174 @@ const NavbarBottom = () => {
         <div className="item">
           <span>Sports</span>
         </div>
-        <div className="item">
+        <div className="item" onClick={handleDropdownThree}>
           <span>Category</span>
           <MdKeyboardArrowDown style={{ fontSize: "20px" }} />
+          {dropDownThree && (
+            <div className="dropDownMenu3">
+              <div className="dropDownMenu3Wrapper">
+                <div className="col">
+                  <div className="item">
+                    <a className="title">Worlds News</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">US &amp; Canada</a>
+                      </li>
+                      <li>
+                        <a href="#">Europe</a>
+                      </li>
+                      <li>
+                        <a href="#">Africa</a>
+                      </li>
+                      <li>
+                        <a href="#">Asia</a>
+                      </li>
+                      <li>
+                        <a href="#">Middle East</a>
+                      </li>
+                      <li>
+                        <a href="#">Asia Pecific</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="item">
+                    <a className="title">Documentation</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">Featured Documentation</a>
+                      </li>
+                      <li>
+                        <a href="#">People &amp; Power</a>
+                      </li>
+                      <li>
+                        <a href="#">Roble Education</a>
+                      </li>
+                      <li>
+                        <a href="#">Rewind</a>
+                      </li>
+                      <li>
+                        <a href="#">Fault Lines</a>
+                      </li>
+                      <li>
+                        <a href="#">News 360 Degree Worlds</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="item">
+                    <a className="title">Sports</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">Football</a>
+                      </li>
+                      <li>
+                        <a href="#">Cricket</a>
+                      </li>
+                      <li>
+                        <a href="#">Hocky</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="item">
+                    <a className="title">Movies</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">Hollywood</a>
+                      </li>
+                      <li>
+                        <a href="#">Bollywood</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="item">
+                    <a className="title">Business</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">US Business</a>
+                      </li>
+                      <li>
+                        <a href="#">Middle East Business</a>
+                      </li>
+                      <li>
+                        <a href="#">Europe Business</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <a className="title">Weather</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">North Pole</a>
+                      </li>
+                      <li>
+                        <a href="#">South Pole</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="item">
+                    <a className="title">Education</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">Africa Child Education</a>
+                      </li>
+                      <li>
+                        <a href="#">Bangladeshi Education</a>
+                      </li>
+                      <li>
+                        <a href="#">Middle East Education</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <a className="title">Health</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">Africa Poor Child Health</a>
+                      </li>
+                      <li>
+                        <a href="#">Fitness and Health</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="item">
+                    <a className="title">Humanities</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">Help For Syrian Refugers</a>
+                      </li>
+                      <li>
+                        <a href="#">Help For Afgan Children</a>
+                      </li>
+                      <li>
+                        <a href="#">Help For African Children</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="item">
+                    <a className="title">Animals</a>
+                    <ul className="list">
+                      <li>
+                        <a href="#">African Animals</a>
+                      </li>
+                      <li>
+                        <a href="#">Australian Animals</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
         <div className="item">
           <span>Pages</span>
@@ -220,4 +391,4 @@ const NavbarBottom = () => {
   )
 }
 
-export default NavbarBottom
+export default NavbarBottom;
