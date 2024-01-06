@@ -3,6 +3,8 @@ import styles from "../../styles/page.module.scss"
 import NavbarTop from "@/components/NavbarTop"
 import AdvertTop from "@/components/AdvertTop"
 import NavbarBottom from "@/components/NavbarBottom"
+import HotLinks from "@/components/HotLinks"
+import MainContent from "@/components/MainContent"
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
         <NavbarTop />
         <AdvertTop />
         <NavbarBottom />
+        <HotLinks/>
+        <MainContent/>
       </div>
     </div>
   )

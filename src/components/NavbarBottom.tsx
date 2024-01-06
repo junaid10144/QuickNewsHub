@@ -24,13 +24,17 @@ const NavbarBottom = () => {
   const handleDropdownOne = (e) => {
     setDropDownOne(!dropDownOne);
     setDropDownTwo(false);
+    setDropDownThree(false);
   }
   const handleDropdownTwo = (e) => {
     setDropDownTwo(!dropDownTwo);
     setDropDownOne(false);
+    setDropDownThree(false);
   };
   const handleDropdownThree = (e) => {
     setDropDownThree(!dropDownThree);
+    setDropDownOne(false);
+    setDropDownTwo(false);
   }
 
   return (
