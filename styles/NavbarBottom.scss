@@ -47,6 +47,100 @@
             }
         }
 
+        .dropDownMenu2{
+            position: absolute;
+            background-color: white;
+            top: 40px;
+            left: -95px;
+            width: 1145px;
+            height: 300px;
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            border-bottom: 2px solid #ce0000;
+            z-index: 1;
+
+            .dropDownMenu2Wrapper{
+                display: flex;
+
+                .left{
+                    flex: 1.9;
+                    display: flex;
+                    flex-direction: column;
+
+                    .item{
+                        display: flex;
+                        align-items: center;
+                        color: #666;
+                        padding-bottom: 20px;
+                        transition: 0.5s;
+
+                        &:hover{
+                            color: #ce0000;
+                        }
+                    }
+                }
+                .right{
+                    flex: 10;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .rightTop{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        gap: 15px;
+
+                        .item{
+                            display: flex;
+                            flex-direction: column;
+                            width: 220px;
+                            color: #666;
+                            img{
+                                position: relative;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+
+                            .cat{
+                                position: absolute;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                left: 15px;
+                                top: 10px;
+                                padding: 2px 10px ;
+                                background-color: #222;
+                                color: white;
+                                cursor: pointer;
+
+                                &:hover{
+                                    background-color: #ce0000;
+                                }
+                            }
+
+                            .icon{
+                                position: absolute;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                right: 15px;
+                                top: 10px;
+                                padding: 4px;
+                                background-color: #ce0000;
+                                color: white;
+                                cursor: pointer;
+
+                                &:hover{
+                                    background-color: #222;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         
 
 
