@@ -5,6 +5,7 @@ import AdvertTop from "@/components/AdvertTop"
 import NavbarBottom from "@/components/NavbarBottom"
 import HotLinks from "@/components/HotLinks"
 import MainContent from "@/components/MainContent"
+import MainBody from "@/components/MainBody"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <NavbarBottom />
         <HotLinks/>
         <MainContent/>
+        <MainBody/>
       </div>
     </div>
   )
