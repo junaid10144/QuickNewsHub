@@ -1,5 +1,5 @@
 "use client"
-import { WorldNews } from "@/app/category"
+import { Technology, WorldNews } from "@/app/category"
 import "../../styles/MainBody.scss"
 import StyleOne from "./StyleOne"
 import StyleTwo from "./StyleTwo"
@@ -12,7 +12,7 @@ const MainBody = () => {
           <StyleOne { ...WorldNews } />
         </div>
         <div className="item">
-          <StyleTwo />
+          <StyleTwo { ...Technology} />
         </div>
         <div className="item">
           <Widget />
