@@ -8,6 +8,7 @@ import MainContent from "@/components/MainContent"
 import MainBody from "@/components/MainBody"
 import MainBodyTwo from "@/components/MainBodyTwo"
 import MainBodyThree from "@/components/MainBodyThree"
+import AudioVideo from "@/components/AudioVideo"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <MainBody/>
         <MainBodyTwo/>
         <MainBodyThree/>
+        <AudioVideo/>
       </div>
     </div>
   )
