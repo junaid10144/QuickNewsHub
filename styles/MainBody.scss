@@ -1,13 +1,100 @@
-.mainBody{
-    padding: 30px 30px;
+.mainBody {
+  padding: 30px 30px;
 
-    .mainBodyWrapper{
-        display: flex;
-        gap: 25px;
+  .mainBodyWrapper {
+    display: flex;
+    gap: 25px;
 
-        .item{
-            flex: 4;
-            width: 100%;
-        }
+    .item {
+      flex: 4;
+      width: 100%;
     }
+  }
+
+  .advertMiddleWrapper {
+    display: flex;
+    gap: 25px;
+
+    .advert {
+      flex: 8;
+      margin-top: 100px;
+      cursor: pointer;
+    }
+
+    .newsLetter {
+      flex: 4;
+      margin-top: 6opx;
+
+      .top {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0px;
+        border-top: 2px solid #ce0000;
+        z-index: 0;
+
+        h2 {
+          position: relative;
+          margin: 0;
+          color: #ce0000;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 26px;
+          text-transform: uppercase;
+          z-index: 0;
+        }
+
+        .icon {
+          color: #777;
+          font-size: 18px;
+          line-height: 26px;
+          cursor: pointer;
+        }
+      }
+
+      .bottom{
+        background-color: #f4f4f4;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+
+        .bottomWrapper{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin: 10px;
+
+          form{
+            .formInput{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              input{
+                width: 90%;
+                height: 40px;
+                border: none;
+                outline: none;
+                padding: 10px;
+                background-color: #e8e6e6;
+              }
+
+              .button{
+                height: 40px;
+                width: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #ce0000;
+                color: white;
+                border: none;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
