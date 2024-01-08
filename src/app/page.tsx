@@ -7,6 +7,7 @@ import HotLinks from "@/components/HotLinks"
 import MainContent from "@/components/MainContent"
 import MainBody from "@/components/MainBody"
 import MainBodyTwo from "@/components/MainBodyTwo"
+import MainBodyThree from "@/components/MainBodyThree"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <MainContent/>
         <MainBody/>
         <MainBodyTwo/>
+        <MainBodyThree/>
       </div>
     </div>
   )

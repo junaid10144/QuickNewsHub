@@ -1,0 +1,14 @@
+.mainBodyThree{
+    padding: 40px 30px;
+    margin-top: -250px;
+
+    .mainBodyThreeWrapper{
+        display: flex;
+        gap: 25px;
+
+        .item{
+            flex: 4;
+            width: 100%;
+        }
+    }
+} 
