@@ -6,6 +6,7 @@ import NavbarBottom from "@/components/NavbarBottom"
 import HotLinks from "@/components/HotLinks"
 import MainContent from "@/components/MainContent"
 import MainBody from "@/components/MainBody"
+import MainBodyTwo from "@/components/MainBodyTwo"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <HotLinks/>
         <MainContent/>
         <MainBody/>
+        <MainBodyTwo/>
       </div>
     </div>
   )
