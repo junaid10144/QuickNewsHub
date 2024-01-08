@@ -71,16 +71,16 @@
               justify-content: center;
               padding: 5px;
 
-              li{
+              li {
                 color: #777;
                 padding: 5px 0px;
               }
 
-              li a{
+              li a {
                 font-weight: 700;
               }
 
-              li.active{
+              li.active {
                 color: white;
                 background-color: #ce0000;
                 padding: 5px 6px;
@@ -89,58 +89,69 @@
             }
           }
 
-          .bottom{
-            .item{
+          .bottom {
+            .item {
+              display: flex;
+              align-items: center;
+              margin-top: 15px;
+              gap: 15px;
+              padding-top: 15px;
+              border-top: 1px solid #ccc;
+
+              .left {
+                img {
+                  width: 110px;
+                  cursor: pointer;
+                }
+              }
+
+              .right {
                 display: flex;
-                align-items: center;
-                margin-top: 15px;
-                gap: 15px;
-                padding-top: 15px;
-                border-top: 1px solid #ccc;
+                flex-direction: column;
 
-                .left{
-                    img{
-                        width: 110px;
-                        cursor: pointer;
+                .nav {
+                  list-style: none;
+                  margin: 0;
+                  padding: 0;
+                  display: flex;
+                  align-items: center;
+                  gap: 15px;
 
+                  li {
+                    color: #777;
+                    transition: 0.5s;
+                    cursor: pointer;
+
+                    &:hover {
+                      color: #ce0000;
                     }
+                  }
                 }
 
-                .right{
-                    display: flex;
-                    flex-direction: column;
+                h3 {
+                  font-weight: 700;
+                  color: #333;
+                  transition: 0.5s;
+                  cursor: pointer;
 
-                    .nav{
-                        list-style: none;
-                        margin: 0;
-                        padding: 0;
-                        display: flex;
-                        align-items: center;
-                        gap: 15px;
-
-                        li{
-                            color: #777;
-                            transition: 0.5s;
-                            cursor: pointer;
-
-                            &:hover{
-                                color: #ce0000;
-                            }   
-                        }
-                    }
-
-                    h3{
-                        font-weight: 700;
-                        color: #333;
-                        transition: 0.5s;
-                        cursor: pointer;
-
-                        &:hover{
-                            color: #ce0000;
-                        }
-                    }
+                  &:hover {
+                    color: #ce0000;
+                  }
                 }
+              }
             }
+          }
+        }
+        .adWidget {
+          padding: 30px 30px 15px;
+          background-color: #f4f4f4;
+          text-align: center;
+
+          img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 15px;
+            cursor: pointer;
           }
         }
       }

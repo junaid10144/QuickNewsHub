@@ -4,6 +4,7 @@ import "../../styles/MainBodyTwo.scss"
 import StyleOne from "./StyleOne"
 import StyleTwo from "./StyleTwo"
 import { FaRegNewspaper } from "react-icons/fa"
+import { GoMegaphone } from "react-icons/go"
 
 const MainBodyTwo = () => {
   return (
@@ -13,21 +14,27 @@ const MainBodyTwo = () => {
           <StyleTwo {...Finance} />
         </div>
         <div className="styleTwo2">
-          <StyleOne {...Sports}/>
+          <StyleOne {...Sports} />
         </div>
         <div className="styleThree">
           <div className="widgets">
             <div className="widgetTitle">
               <h2>Featured News</h2>
-              <FaRegNewspaper className="icon"/>
+              <FaRegNewspaper className="icon" />
             </div>
 
             <div className="list">
               <div className="top">
                 <ul>
-                  <li><a className="hotNews">Hot News</a></li>
-                  <li className="active"><a className="trendyNews">Trendy News</a></li>
-                  <li><a className="mostWatched">Most Watched</a></li>
+                  <li>
+                    <a className="hotNews">Hot News</a>
+                  </li>
+                  <li className="active">
+                    <a className="trendyNews">Trendy News</a>
+                  </li>
+                  <li>
+                    <a className="mostWatched">Most Watched</a>
+                  </li>
                 </ul>
               </div>
               <div className="bottom">
@@ -40,7 +47,10 @@ const MainBodyTwo = () => {
                       <li>Huntu Raya</li>
                       <li>20 Dec 2023</li>
                     </ul>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe!</h3>
+                    <h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe!
+                    </h3>
                   </div>
                 </div>
                 <div className="item">
@@ -52,7 +62,10 @@ const MainBodyTwo = () => {
                       <li>Huntu Raya</li>
                       <li>20 Dec 2023</li>
                     </ul>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe!</h3>
+                    <h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe!
+                    </h3>
                   </div>
                 </div>
                 <div className="item">
@@ -64,7 +77,10 @@ const MainBodyTwo = () => {
                       <li>Huntu Raya</li>
                       <li>20 Dec 2023</li>
                     </ul>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe!</h3>
+                    <h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe!
+                    </h3>
                   </div>
                 </div>
                 <div className="item">
@@ -76,10 +92,26 @@ const MainBodyTwo = () => {
                       <li>Huntu Raya</li>
                       <li>20 Dec 2023</li>
                     </ul>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe!</h3>
+                    <h3>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe!
+                    </h3>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="widgets">
+            <div className="widgetTitle">
+              <h2 className="h4">Advertisement</h2>
+              <GoMegaphone className="icon" />
+            </div>
+
+            <div className="adWidget">
+              <a>
+                <img src="assets/ad-300x250-2.jpg" alt="" />
+              </a>
             </div>
           </div>
         </div>
